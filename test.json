@@ -1,0 +1,68 @@
+{
+  "input_data": "apple orange\nbanana orange\norange apple",
+  "mapper_count": 3,
+  "reducer_count": 2,
+  "mapper_input": [
+    {
+      "offset": 0,
+      "data": "apple orange"
+    },
+    {
+      "offset": 13,
+      "data": "banana orange"
+    },
+    {
+      "offset": 27,
+      "data": "orange apple"
+    }
+  ],
+  "mapper_output": [
+    {
+      "word": "apple",
+      "count": 1,
+      "mapper": 0
+    },
+    {
+      "word": "orange",
+      "count": 1,
+      "mapper": 0
+    },
+    {
+      "word": "banana",
+      "count": 1,
+      "mapper": 1
+    },
+    {
+      "word": "orange",
+      "count": 1,
+      "mapper": 1
+    },
+    {
+      "word": "orange",
+      "count": 1,
+      "mapper": 2
+    },
+    {
+      "word": "apple",
+      "count": 1,
+      "mapper": 2
+    }
+  ],
+  "reducer_output": [
+    {
+      "word": "apple",
+      "count": 2,
+      "reducer": 0
+    },
+    {
+      "word": "banana",
+      "count": 1,
+      "reducer": 0
+    },
+    {
+      "word": "orange",
+      "count": 3,
+      "reducer": 1
+    }
+  ]
+}

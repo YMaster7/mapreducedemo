@@ -1,0 +1,33 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+pre {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+svg {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
